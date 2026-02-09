@@ -1,0 +1,982 @@
+[
+    {
+        "name": "So' Riso - Ristorante gelateria bar c/o cc Milanofiori",
+        "type": "Ristorante",
+        "address": "via Milanofiori - Assago (MI)",
+        "region": "Lombardia",
+        "aic_certified": false,
+        "source_url": "http://www.ristorantiperceliaci.net/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.3967812,
+        "lng": 9.1475803
+    },
+    {
+        "name": "Pasticceria Lott - Tavola calda",
+        "type": "Ristorante",
+        "address": "viale Serafini 85/A - Fabriano (AN)",
+        "region": "Italy",
+        "aic_certified": false,
+        "source_url": "http://www.ristorantiperceliaci.net/cerca/attivita.php?idRegione=9&idProvincia=3",
+        "lat": 43.3423542,
+        "lng": 12.903233
+    },
+    {
+        "name": "Madonne et Messeri",
+        "type": "Ristorante",
+        "address": "via XX Settembre 10 - Gubbio (PG)",
+        "region": "Umbria",
+        "aic_certified": false,
+        "source_url": "http://www.ristorantiperceliaci.net/cerca/attivita.php?idRegione=17&idProvincia=63",
+        "lat": 43.3520053,
+        "lng": 12.5813735
+    },
+    {
+        "name": "Bar del Re Tavola Fredda",
+        "type": "Ristorante",
+        "address": "Via Romana Ovest 19 - Montignoso (MS)",
+        "region": "Toscana",
+        "aic_certified": false,
+        "source_url": "http://www.ristorantiperceliaci.net/cerca/attivita.php?idRegione=15&idProvincia=53",
+        "lat": 44.0043078,
+        "lng": 10.1519032
+    },
+    {
+        "name": "Don Chisciotte",
+        "type": "Ristorante",
+        "address": "via Barberinese 157 - Campi Bisenzio (FI)",
+        "region": "Toscana",
+        "aic_certified": false,
+        "source_url": "http://www.ristorantiperceliaci.net/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.817641,
+        "lng": 11.1219704
+    },
+    {
+        "name": "Don Chisciotte",
+        "type": "Pizzeria",
+        "address": "via Barberinese 157 - Campi Bisenzio (FI)",
+        "region": "Toscana",
+        "aic_certified": false,
+        "source_url": "http://www.pizzerieperceliaci.net/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.817641,
+        "lng": 11.1219704
+    },
+    {
+        "name": "Pasticceria La Delizia",
+        "type": "Pasticceria",
+        "address": "Via Del Gallitello 265-267 - Potenza (PZ)",
+        "region": "Basilicata",
+        "aic_certified": true,
+        "source_url": "http://www.pasticcerieperceliaci.com/cerca/attivita.php?idRegione=2&idProvincia=71",
+        "lat": 40.629964,
+        "lng": 15.7920572
+    },
+    {
+        "name": "Pasticceria La Terrazza",
+        "type": "Pasticceria",
+        "address": "via Umberto I 143 - Rionero in Vulture (PZ)",
+        "region": "Basilicata",
+        "aic_certified": true,
+        "source_url": "http://www.pasticcerieperceliaci.com/cerca/attivita.php?idRegione=2&idProvincia=71",
+        "lat": 40.927791,
+        "lng": 15.6744439
+    },
+    {
+        "name": "Bar Gelateria Torre Verde",
+        "type": "Gelateria",
+        "address": "Via del Suffragio 2 - Trento (TN)",
+        "region": "Trentino Alto Adige",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=16&idProvincia=89",
+        "lat": 46.071873,
+        "lng": 11.1249148
+    },
+    {
+        "name": "Cherry Gelateria",
+        "type": "Gelateria",
+        "address": "via Roma 24 - Rovereto (TN)",
+        "region": "Trentino Alto Adige",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=16&idProvincia=89",
+        "lat": 45.8894595,
+        "lng": 11.0433693
+    },
+    {
+        "name": "Chiccheria",
+        "type": "Gelateria",
+        "address": "via Vittorio Emanuele II 2 - Villasimius (CA)",
+        "region": "Sardegna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=13&idProvincia=19",
+        "lat": 39.1421767,
+        "lng": 9.5207056
+    },
+    {
+        "name": "Il Gelato di Beppe",
+        "type": "Gelateria",
+        "address": "via Umberto I 60 - Villasimius (CA)",
+        "region": "Sardegna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=13&idProvincia=19",
+        "lat": 39.143487,
+        "lng": 9.519185
+    },
+    {
+        "name": "Stecco Natura",
+        "type": "Gelateria",
+        "address": "via Roma 41 - Siracusa (SR)",
+        "region": "Sicilia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=84",
+        "lat": 37.0615656,
+        "lng": 14.9069696
+    },
+    {
+        "name": "Tasta Gelato",
+        "type": "Gelateria",
+        "address": "via Marzamemi 61 - Pachino (SR)",
+        "region": "Sicilia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=84",
+        "lat": 36.7407137,
+        "lng": 15.1162115
+    },
+    {
+        "name": "Bye Spike",
+        "type": "Gelateria",
+        "address": "Via Fosso Tantillo Pirato 1 - Modica (RG)",
+        "region": "Sicilia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=75",
+        "lat": 36.8287038,
+        "lng": 14.7604894
+    },
+    {
+        "name": "Stecco Natura",
+        "type": "Gelateria",
+        "address": "Corso Umberto 229 - Taormina (ME)",
+        "region": "Sicilia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=49",
+        "lat": 37.8511728,
+        "lng": 15.2827073
+    },
+    {
+        "name": "The Time CafÃ¨ - Bar Gelateria",
+        "type": "Gelateria",
+        "address": "Nicola Fabrizi 66/68 - Messina (ME)",
+        "region": "Sicilia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=49",
+        "lat": 38.1867485,
+        "lng": 15.5540484
+    },
+    {
+        "name": "Glute Free Shop",
+        "type": "Gelateria",
+        "address": "Via Pio X 21 - Gela (CL)",
+        "region": "Sicilia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=23",
+        "lat": 37.0721804,
+        "lng": 14.2333835
+    },
+    {
+        "name": "Il BignÃ¨",
+        "type": "Gelateria",
+        "address": "Via Calabria 66 - Caltanissetta (CL)",
+        "region": "Sicilia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=23",
+        "lat": 37.4929183,
+        "lng": 14.0528716
+    },
+    {
+        "name": "Le Delizie",
+        "type": "Gelateria",
+        "address": "Via Nazionale 21/25 - Milena (CL)",
+        "region": "Sicilia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=14&idProvincia=23",
+        "lat": 37.4709499,
+        "lng": 13.7345305
+    },
+    {
+        "name": "Blob il Gelato",
+        "type": "Gelateria",
+        "address": "Via Napoli 30 - Crotone (KR)",
+        "region": "Calabria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=20&idProvincia=41",
+        "lat": 39.0803699,
+        "lng": 17.124197
+    },
+    {
+        "name": "Bar Raibow",
+        "type": "Gelateria",
+        "address": "Via Nazionale 1 - Caulonia (RC)",
+        "region": "Calabria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=20&idProvincia=73",
+        "lat": 38.3424338,
+        "lng": 16.4636666
+    },
+    {
+        "name": "L'Angelo Dolce",
+        "type": "Gelateria",
+        "address": "Via Roma 55 - Roccella Ionica (RC)",
+        "region": "Calabria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=20&idProvincia=73",
+        "lat": 38.3222202,
+        "lng": 16.4059158
+    },
+    {
+        "name": "Nuova Cremeria sottozero",
+        "type": "Gelateria",
+        "address": "C.so V.Emanuele 83 - Reggio Calabria (RC)",
+        "region": "Calabria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=20&idProvincia=73",
+        "lat": 38.2712141,
+        "lng": 16.3010006
+    },
+    {
+        "name": "San Francesco",
+        "type": "Gelateria",
+        "address": "Via Sbarre Centrali 599 - Reggio Calabria (RC)",
+        "region": "Calabria",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=20&idProvincia=73",
+        "lat": 38.085567,
+        "lng": 15.6468878
+    },
+    {
+        "name": "Dolce idea",
+        "type": "Gelateria",
+        "address": "Via V.Veneto 31 - Quinto Vicentino (VI)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=100",
+        "lat": 45.5732923,
+        "lng": 11.6247541
+    },
+    {
+        "name": "Gelateria Artigianale Vale",
+        "type": "Gelateria",
+        "address": "Via Divisione Julia 45 - Thiene (VI)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=100",
+        "lat": 45.7133715,
+        "lng": 11.4872266
+    },
+    {
+        "name": "Nuvole di Latte",
+        "type": "Gelateria",
+        "address": "via Roma 56 - Bolzano Vicentino (VI)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=100",
+        "lat": 45.6032783,
+        "lng": 11.6220111
+    },
+    {
+        "name": "Grom",
+        "type": "Gelateria",
+        "address": "P.zza Del Quartiere Latino 16 - Treviso (TV)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=94",
+        "lat": 45.6650996,
+        "lng": 12.2494982
+    },
+    {
+        "name": "Colombina",
+        "type": "Gelateria",
+        "address": "Lido - Via Bafile 120 - Jesolo (VE)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=99",
+        "lat": 45.5040453,
+        "lng": 12.6404471
+    },
+    {
+        "name": "Gelateria Gelidus",
+        "type": "Gelateria",
+        "address": "viale Aurora 54 - San Michele al Tagliamento (VE)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=99",
+        "lat": 45.635728,
+        "lng": 13.0501309
+    },
+    {
+        "name": "Gelateria Lovat",
+        "type": "Gelateria",
+        "address": "P.zza I Maggio 15 - Jesolo (VE)",
+        "region": "Veneto",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=99",
+        "lat": 45.5365002,
+        "lng": 12.6397135
+    },
+    {
+        "name": "La Boutique del Gelato",
+        "type": "Gelateria",
+        "address": "Castello 5727 - Venezia (VE)",
+        "region": "Veneto",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=19&idProvincia=99",
+        "lat": 45.437229,
+        "lng": 12.3393232
+    },
+    {
+        "name": "Gelatando",
+        "type": "Gelateria",
+        "address": "Via Martiri P.zza Loggia 2/4 - Capriano del Colle (BS)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=17",
+        "lat": 45.4601728,
+        "lng": 10.1266928
+    },
+    {
+        "name": "Gelateria Lucio Possi",
+        "type": "Gelateria",
+        "address": "Via Triumplina 245 - Brescia (BS)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=17",
+        "lat": 45.5793412,
+        "lng": 10.2287309
+    },
+    {
+        "name": "Gelateria Uberti",
+        "type": "Gelateria",
+        "address": "Via Cremona 69 - Brescia (BS)",
+        "region": "Lombardia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=17",
+        "lat": 45.5271302,
+        "lng": 10.2232355
+    },
+    {
+        "name": "Ice Cream",
+        "type": "Gelateria",
+        "address": "P.zza Giovanni XXIII 26 - Crema (CR)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=26",
+        "lat": 45.3608689,
+        "lng": 9.6829819
+    },
+    {
+        "name": "Bar Gelateria Top del Gelato",
+        "type": "Gelateria",
+        "address": "C.so Di Porta Romana 92 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4558044,
+        "lng": 9.1961736
+    },
+    {
+        "name": "Emporio CafÃ¨",
+        "type": "Gelateria",
+        "address": "Piazza Caneva 2 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4880648,
+        "lng": 9.1618776
+    },
+    {
+        "name": "Gelateria AdÃ¨l",
+        "type": "Gelateria",
+        "address": "via della Repubblica 116 - Novate Milanese (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.5313076,
+        "lng": 9.1352758
+    },
+    {
+        "name": "Gelateria Fiordipanna",
+        "type": "Gelateria",
+        "address": "Piazza 11 Settembre 5 - Arese (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.5510497,
+        "lng": 9.0768067
+    },
+    {
+        "name": "Gelateria L'Isola",
+        "type": "Gelateria",
+        "address": "Via Forze Armate 50 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.5161303,
+        "lng": 9.0252377
+    },
+    {
+        "name": "Grom",
+        "type": "Gelateria",
+        "address": "Piazza Gae Aulenti 8 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4834778,
+        "lng": 9.1902248
+    },
+    {
+        "name": "Grom",
+        "type": "Gelateria",
+        "address": "C.so XXII Marzo 5 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4623957,
+        "lng": 9.2087686
+    },
+    {
+        "name": "Grom",
+        "type": "Gelateria",
+        "address": "Via S.Margherita 16 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4663447,
+        "lng": 9.1889231
+    },
+    {
+        "name": "Il Gelato del Walter",
+        "type": "Gelateria",
+        "address": "Via Dell'Allodola 16 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4550408,
+        "lng": 9.1199479
+    },
+    {
+        "name": "Il Gelato Ecologico & Frozeen Yougurt",
+        "type": "Gelateria",
+        "address": "Via Ravizza 5 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4675861,
+        "lng": 9.1520979
+    },
+    {
+        "name": "L'Isola",
+        "type": "Gelateria",
+        "address": "Via Forze Armate 50 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.5161303,
+        "lng": 9.0252377
+    },
+    {
+        "name": "Pinguino Blu",
+        "type": "Gelateria",
+        "address": "Via P.Sarpi 2 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4819237,
+        "lng": 9.1812401
+    },
+    {
+        "name": "So' Riso - Ristorante gelateria bar c/o cc Milanofiori",
+        "type": "Gelateria",
+        "address": "via Milanofiori - Assago (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.3967812,
+        "lng": 9.1475803
+    },
+    {
+        "name": "Stecco Natura",
+        "type": "Gelateria",
+        "address": "via Vigevano 25 - Milano (MI)",
+        "region": "Lombardia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=8&idProvincia=50",
+        "lat": 45.4529342,
+        "lng": 9.1727922
+    },
+    {
+        "name": "Pasticceria La Delizia",
+        "type": "Gelateria",
+        "address": "Via Del Gallitello 265-267 - Potenza (PZ)",
+        "region": "Basilicata",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=2&idProvincia=71",
+        "lat": 40.629964,
+        "lng": 15.7920572
+    },
+    {
+        "name": "Pasticceria La Terrazza",
+        "type": "Gelateria",
+        "address": "via Umberto I 143 - Rionero in Vulture (PZ)",
+        "region": "Basilicata",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=2&idProvincia=71",
+        "lat": 40.927791,
+        "lng": 15.6744439
+    },
+    {
+        "name": "MenÃ¬ senza glutine",
+        "type": "Gelateria",
+        "address": "via Amerigo Vespucci 10 - Grottaminarda (AV)",
+        "region": "Campania",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=3&idProvincia=9",
+        "lat": 41.0669542,
+        "lng": 15.067389
+    },
+    {
+        "name": "Belinda cremoseria mediterranea",
+        "type": "Gelateria",
+        "address": "Piazza della Mercanzia 15 - Agropoli (SA)",
+        "region": "Campania",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=3&idProvincia=80",
+        "lat": 40.3508544,
+        "lng": 14.9862898
+    },
+    {
+        "name": "Gelateria Vittorio",
+        "type": "Gelateria",
+        "address": "Marina di Camerota - Lungomare Trieste 111 - Camerota (SA)",
+        "region": "Campania",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=3&idProvincia=80",
+        "lat": 40.0004859,
+        "lng": 15.3744714
+    },
+    {
+        "name": "Wellness CafÃ¨",
+        "type": "Gelateria",
+        "address": "via Roma 136 - Salerno (SA)",
+        "region": "Campania",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=3&idProvincia=80",
+        "lat": 40.6418861,
+        "lng": 14.868458
+    },
+    {
+        "name": "Gabrielino",
+        "type": "Gelateria",
+        "address": "Via Garibaldi 3 - Mattinata (FG)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=32",
+        "lat": 41.709934,
+        "lng": 16.0510462
+    },
+    {
+        "name": "Gelateria Gabrielino",
+        "type": "Gelateria",
+        "address": "P.zza Umberto Giordano 65 - Foggia (FG)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=32",
+        "lat": 41.4619391,
+        "lng": 15.5494814
+    },
+    {
+        "name": "Gelateria Pinagel",
+        "type": "Gelateria",
+        "address": "corso Umberto I 7 - Peschici (FG)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=32",
+        "lat": 41.9468841,
+        "lng": 16.0141378
+    },
+    {
+        "name": "Maggiore",
+        "type": "Gelateria",
+        "address": "Via Deputato Petrone 5 - Vieste (FG)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=32",
+        "lat": 41.8821255,
+        "lng": 16.1801726
+    },
+    {
+        "name": "Maggiore D.A.",
+        "type": "Gelateria",
+        "address": "Via S.Maria Di Merino 40 - Vieste (FG)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=32",
+        "lat": 41.8835137,
+        "lng": 16.1769598
+    },
+    {
+        "name": "Bar Pasticc. Principe",
+        "type": "Gelateria",
+        "address": "Via De Cesare 38 - Taranto (TA)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=87",
+        "lat": 40.4711581,
+        "lng": 17.2407319
+    },
+    {
+        "name": "Gelateria del Ponte",
+        "type": "Gelateria",
+        "address": "Via D'Aquino 110 - Taranto (TA)",
+        "region": "Puglia",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=87",
+        "lat": 40.5354204,
+        "lng": 17.4364472
+    },
+    {
+        "name": "Gelteria Miola",
+        "type": "Gelateria",
+        "address": "Via Per Maruggio 96 - Manduria (TA)",
+        "region": "Puglia",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=12&idProvincia=87",
+        "lat": 40.3921817,
+        "lng": 17.6325767
+    },
+    {
+        "name": "Gelateria I Milli",
+        "type": "Gelateria",
+        "address": "Largo Cesti - Latina (LT)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=6&idProvincia=46",
+        "lat": 41.4456775,
+        "lng": 12.8802011
+    },
+    {
+        "name": "I Dolci Pensieri",
+        "type": "Gelateria",
+        "address": "Via Dei Frassini - Formia (LT)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=6&idProvincia=46",
+        "lat": 41.274968,
+        "lng": 13.6934659
+    },
+    {
+        "name": "I Milli",
+        "type": "Gelateria",
+        "address": "L.go Cesti - Latina (LT)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=6&idProvincia=46",
+        "lat": 41.4456775,
+        "lng": 12.8802011
+    },
+    {
+        "name": "Il Capriccio",
+        "type": "Gelateria",
+        "address": "Via XXIV Maggio 40 - Campobasso (CB)",
+        "region": "Molise",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=10&idProvincia=20",
+        "lat": 41.5089715,
+        "lng": 14.9113438
+    },
+    {
+        "name": "A Casa di Ludo",
+        "type": "Gelateria",
+        "address": "via Trieste 141 - Tortoreto (TE)",
+        "region": "Abruzzo",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=1&idProvincia=88",
+        "lat": 42.8033705,
+        "lng": 13.9411546
+    },
+    {
+        "name": "Me Gusta Mas",
+        "type": "Gelateria",
+        "address": "Lungomare Marconi 166 - Alba Adriatica (TE)",
+        "region": "Abruzzo",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=1&idProvincia=88",
+        "lat": 42.8250447,
+        "lng": 13.9350261
+    },
+    {
+        "name": "Gelateria Pelacani",
+        "type": "Gelateria",
+        "address": "Piazza Mentana 5 - Porto San Giorgio (FM)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=105",
+        "lat": 43.1795944,
+        "lng": 13.7984668
+    },
+    {
+        "name": "byNice Naturalmente Gelato",
+        "type": "Gelateria",
+        "address": "via Cialdini 1 - Fabriano (AN)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=3",
+        "lat": 43.3370099,
+        "lng": 12.903212
+    },
+    {
+        "name": "Ciro & Pio Gelato Mio",
+        "type": "Gelateria",
+        "address": "V.le della Vittoria 89 - Jesi (AN)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=3",
+        "lat": 43.5221445,
+        "lng": 13.2401219
+    },
+    {
+        "name": "Gelateria Bynice",
+        "type": "Gelateria",
+        "address": "viale della Vittoria 44/C - Jesi (AN)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=3",
+        "lat": 43.5246787,
+        "lng": 13.2436696
+    },
+    {
+        "name": "Pasticceria Lott - Tavola calda",
+        "type": "Gelateria",
+        "address": "viale Serafini 85/A - Fabriano (AN)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=3",
+        "lat": 43.3423542,
+        "lng": 12.903233
+    },
+    {
+        "name": "Gelateria Cherie",
+        "type": "Gelateria",
+        "address": "viale De Gasperi 48 - San Benedetto del Tronto (AP)",
+        "region": "Italy",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=9&idProvincia=5",
+        "lat": 42.9489809,
+        "lng": 13.8818741
+    },
+    {
+        "name": "L'Arte del Gelato",
+        "type": "Gelateria",
+        "address": "Ponte san giovanni - Via della scuola 120 - Perugia (PG)",
+        "region": "Umbria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=17&idProvincia=63",
+        "lat": 43.0890182,
+        "lng": 12.4399068
+    },
+    {
+        "name": "Les CrÃ¨ Fantastique - Creperia",
+        "type": "Gelateria",
+        "address": "Via Volte della Pace 38 - Perugia (PG)",
+        "region": "Umbria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=17&idProvincia=63",
+        "lat": 43.1122811,
+        "lng": 12.3902452
+    },
+    {
+        "name": "Madonne et Messeri",
+        "type": "Gelateria",
+        "address": "via XX Settembre 10 - Gubbio (PG)",
+        "region": "Umbria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=17&idProvincia=63",
+        "lat": 43.3520053,
+        "lng": 12.5813735
+    },
+    {
+        "name": "Andrea Gelateria",
+        "type": "Gelateria",
+        "address": "Via Mancini 7 - Terni (TR)",
+        "region": "Umbria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=17&idProvincia=92",
+        "lat": 42.5628921,
+        "lng": 12.6480451
+    },
+    {
+        "name": "Meeting Coffee",
+        "type": "Gelateria",
+        "address": "Via Ternana 1/c - San Gemini (TR)",
+        "region": "Umbria",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=17&idProvincia=92",
+        "lat": 42.5923176,
+        "lng": 12.5657435
+    },
+    {
+        "name": "Bar del Re Tavola Fredda",
+        "type": "Gelateria",
+        "address": "Via Romana Ovest 19 - Montignoso (MS)",
+        "region": "Toscana",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=53",
+        "lat": 44.0043078,
+        "lng": 10.1519032
+    },
+    {
+        "name": "Gelateria Eugenio",
+        "type": "Gelateria",
+        "address": "P.zza IV Novembre 5 - Massa (MS)",
+        "region": "Toscana",
+        "aic_certified": false,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=53",
+        "lat": 44.0239059,
+        "lng": 10.137105
+    },
+    {
+        "name": "La Sorbettiera",
+        "type": "Gelateria",
+        "address": "P.zza Tasso 11/r - Firenze (FI)",
+        "region": "Toscana",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.7671945,
+        "lng": 11.2416688
+    },
+    {
+        "name": "Mandorla e Limone",
+        "type": "Gelateria",
+        "address": "Via Verdi 95 - Sesto Fiorentino (FI)",
+        "region": "Toscana",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.8322109,
+        "lng": 11.2003707
+    },
+    {
+        "name": "Monte di BontÃ",
+        "type": "Gelateria",
+        "address": "Via Ridolfi 7/9 - Empoli (FI)",
+        "region": "Toscana",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.7181915,
+        "lng": 10.9479004
+    },
+    {
+        "name": "Sottozero",
+        "type": "Gelateria",
+        "address": "Via Barberinese 157 - Campi Bisenzio (FI)",
+        "region": "Toscana",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=15&idProvincia=33",
+        "lat": 43.817641,
+        "lng": 11.1219704
+    },
+    {
+        "name": "Gelateria K2",
+        "type": "Gelateria",
+        "address": "Via Matteotti 2/d - Cadelbosco di Sopra (RE)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=74",
+        "lat": 44.7620368,
+        "lng": 10.5965295
+    },
+    {
+        "name": "L'Angolo",
+        "type": "Gelateria",
+        "address": "via Respighi 9 - Castellarano (RE)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=74",
+        "lat": 44.512201,
+        "lng": 10.7315061
+    },
+    {
+        "name": "La Scintilla",
+        "type": "Gelateria",
+        "address": "V.lo del Folletto 1 - Reggio Emilia (RE)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=74",
+        "lat": 44.6962478,
+        "lng": 10.629949
+    },
+    {
+        "name": "West Pacifico",
+        "type": "Gelateria",
+        "address": "Via Kennedy 17/h - Reggio Emilia (RE)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=74",
+        "lat": 44.7085328,
+        "lng": 10.6122536
+    },
+    {
+        "name": "Gelateria Mambo",
+        "type": "Gelateria",
+        "address": "via Mazzini 58 - Bagnacavallo (RA)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=72",
+        "lat": 44.4153923,
+        "lng": 11.9755812
+    },
+    {
+        "name": "Il Gelato Amico",
+        "type": "Gelateria",
+        "address": "Via IV Novembre 8 - Ravenna (RA)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=72",
+        "lat": 44.4180372,
+        "lng": 12.1990214
+    },
+    {
+        "name": "Gelateria Meno Dieci",
+        "type": "Gelateria",
+        "address": "via Maculani 18/12 - Fiorenzuola d'Arda (PC)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=60",
+        "lat": 44.9282365,
+        "lng": 9.9116503
+    },
+    {
+        "name": "Cremeria Vanilla",
+        "type": "Gelateria",
+        "address": "Viale Dante 114/A - Riccione (RN)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=78",
+        "lat": 44.0050095,
+        "lng": 12.6549988
+    },
+    {
+        "name": "La Piazzetta",
+        "type": "Gelateria",
+        "address": "Via Saffi 4 - Rimini (RN)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=78",
+        "lat": 43.9572772,
+        "lng": 12.6573352
+    },
+    {
+        "name": "Nuovo Fiore",
+        "type": "Gelateria",
+        "address": "V.le Ceccarini 1 - Riccione (RN)",
+        "region": "Emilia Romagna",
+        "aic_certified": true,
+        "source_url": "http://www.gelaterieperceliaci.com/cerca/attivita.php?idRegione=4&idProvincia=78",
+        "lat": 44.0029964,
+        "lng": 12.6614757
+    }
+]
