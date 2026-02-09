@@ -72,7 +72,8 @@
             border: 2px solid white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             color: white;
-            font-size: 14px;
+            font-size: 18px;
+            /* Slightly larger for emojis */
             font-weight: bold;
         }
 
@@ -142,20 +143,20 @@
                         `;
 
                         var markerClass = 'marker-gelateria';
-                        var iconContent = '<i class="fa fa-map-marker"></i>';
+                        var iconContent = '🍦';
 
                         if (place.type === 'Gelateria') {
                             markerClass = 'marker-gelateria';
-                            iconContent = 'G';
+                            iconContent = '🍦';
                         } else if (place.type === 'Ristorante') {
                             markerClass = 'marker-ristorante';
-                            iconContent = 'R';
+                            iconContent = '🍝';
                         } else if (place.type === 'Pizzeria') {
                             markerClass = 'marker-pizzeria';
-                            iconContent = 'P';
+                            iconContent = '🍕';
                         } else if (place.type === 'Pasticceria') {
                             markerClass = 'marker-pasticceria';
-                            iconContent = 'B';
+                            iconContent = '🍰';
                         }
 
                         var icon = L.divIcon({
