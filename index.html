@@ -71,14 +71,7 @@
             transition: transform 0.3s ease;
         }
 
-        .filter-panel h3 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #2c3e50;
-            font-size: 1.1rem;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-        }
+
 
         .filter-group {
             margin-bottom: 15px;
@@ -220,6 +213,42 @@
                 margin-bottom: 0;
             }
         }
+
+        /* Collapsible styles */
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+            /* Default margin when expanded */
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .filter-panel.collapsed .filter-header {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .filter-panel.collapsed .filter-content {
+            display: none;
+        }
+
+        /* Adjust panel padding/size when collapsed */
+        .filter-panel.collapsed {
+            padding-bottom: 15px;
+            /* Keep uniform padding */
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .filter-panel.collapsed .toggle-icon {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 
@@ -233,39 +262,44 @@
     <div id="map">
         <!-- Filter Panel Overlay -->
         <div class="filter-panel">
-            <h3>Filtry</h3>
+            <div class="filter-header" onclick="toggleFilters()">
+                <h3 style="margin:0; border:none; padding:0;">Filtry</h3>
+                <i class="fas fa-chevron-up toggle-icon"></i>
+            </div>
 
-            <div class="filter-group">
-                <span class="filter-label">Rodzaj lokalu</span>
-                <div class="filter-list">
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" value="Gelateria" checked onchange="updateFilters()">
-                        <span>🍦 Lodziarnia</span>
-                    </label>
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" value="Ristorante" checked onchange="updateFilters()">
-                        <span>🍝 Restauracja</span>
-                    </label>
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" value="Pizzeria" checked onchange="updateFilters()">
-                        <span>🍕 Pizzeria</span>
-                    </label>
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" value="Pasticceria" checked onchange="updateFilters()">
-                        <span>🍰 Cukiernia</span>
+            <div class="filter-content">
+                <div class="filter-group">
+                    <span class="filter-label">Rodzaj lokalu</span>
+                    <div class="filter-list">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" value="Gelateria" checked onchange="updateFilters()">
+                            <span>🍦 Lodziarnia</span>
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" value="Ristorante" checked onchange="updateFilters()">
+                            <span>🍝 Restauracja</span>
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" value="Pizzeria" checked onchange="updateFilters()">
+                            <span>🍕 Pizzeria</span>
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" value="Pasticceria" checked onchange="updateFilters()">
+                            <span>🍰 Cukiernia</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group aic-toggle-wrapper">
+                    <label class="checkbox-wrapper" style="font-weight: bold; color: #e74c3c;">
+                        <input type="checkbox" id="aic-filter" onchange="updateFilters()">
+                        <span>Tylko z certyfikatem AIC</span>
                     </label>
                 </div>
-            </div>
 
-            <div class="filter-group aic-toggle-wrapper">
-                <label class="checkbox-wrapper" style="font-weight: bold; color: #e74c3c;">
-                    <input type="checkbox" id="aic-filter" onchange="updateFilters()">
-                    <span>Tylko z certyfikatem AIC</span>
-                </label>
-            </div>
-
-            <div style="margin-top: 10px; font-size: 0.8rem; color: #95a5a6; text-align: center;">
-                <span id="count-display">Ładowanie...</span>
+                <div style="margin-top: 10px; font-size: 0.8rem; color: #95a5a6; text-align: center;">
+                    <span id="count-display">Ładowanie...</span>
+                </div>
             </div>
         </div>
     </div>
@@ -412,6 +446,11 @@
             // if (newMarkers.length > 0) {
             //     map.fitBounds(markersClusterGroup.getBounds(), { padding: [50, 50] });
             // }
+        }
+
+        function toggleFilters() {
+            var panel = document.querySelector('.filter-panel');
+            panel.classList.toggle('collapsed');
         }
 
     </script>
