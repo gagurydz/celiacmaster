@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caliac Master - Italia</title>
+    <title>Celiak Master - Italia</title>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,11 +14,16 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
+    <!-- Font Awesome for Icons (optional but good for UI) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            /* Prevent scroll on body */
         }
 
         #header {
@@ -27,6 +32,7 @@
             color: white;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 0 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             z-index: 1000;
@@ -36,14 +42,97 @@
         #header h1 {
             margin: 0;
             font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         #map {
             height: calc(100vh - 60px);
             width: 100%;
             z-index: 1;
+            position: relative;
         }
 
+        /* Filter Panel */
+        .filter-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 250px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            /* Above map */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .filter-panel h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        .filter-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        /* Custom Checkbox Style */
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: #34495e;
+            transition: color 0.2s;
+        }
+
+        .checkbox-wrapper:hover {
+            color: #2980b9;
+        }
+
+        .checkbox-wrapper input {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            accent-color: #3498db;
+            cursor: pointer;
+        }
+
+        .aic-toggle-wrapper {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .aic-badge-mini {
+            background-color: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7em;
+            font-weight: bold;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* Popup Styles */
         .aic-badge {
             background-color: #e74c3c;
             color: white;
@@ -51,16 +140,21 @@
             border-radius: 4px;
             font-size: 0.8em;
             font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
         }
 
         .popup-content h3 {
             margin: 0 0 5px 0;
             color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
         }
 
         .popup-content p {
             margin: 5px 0;
             font-size: 0.95em;
+            line-height: 1.4;
         }
 
         /* Custom Markers */
@@ -75,6 +169,14 @@
             font-size: 18px;
             /* Slightly larger for emojis */
             font-weight: bold;
+            background-color: #95a5a6;
+            /* Default gray */
+            transition: transform 0.2s;
+        }
+
+        .custom-marker:hover {
+            transform: scale(1.1);
+            z-index: 1000 !important;
         }
 
         .marker-gelateria {
@@ -97,16 +199,76 @@
         }
 
         /* Purple */
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .filter-panel {
+                width: auto;
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                padding: 15px;
+            }
+
+            .filter-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .checkbox-wrapper {
+                margin-bottom: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div id="header">
-        <h1>Gelaterie Senza Glutine - Italia</h1>
+        <h1>Celiac Master - Italia</h1>
     </div>
 
-    <div id="map"></div>
+    <!-- Map Container -->
+    <div id="map">
+        <!-- Filter Panel Overlay -->
+        <div class="filter-panel">
+            <h3>Filtry</h3>
+
+            <div class="filter-group">
+                <span class="filter-label">Rodzaj lokalu</span>
+                <div class="filter-list">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" value="Gelateria" checked onchange="updateFilters()">
+                        <span>🍦 Lodziarnia</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" value="Ristorante" checked onchange="updateFilters()">
+                        <span>🍝 Restauracja</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" value="Pizzeria" checked onchange="updateFilters()">
+                        <span>🍕 Pizzeria</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" value="Pasticceria" checked onchange="updateFilters()">
+                        <span>🍰 Cukiernia</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group aic-toggle-wrapper">
+                <label class="checkbox-wrapper" style="font-weight: bold; color: #e74c3c;">
+                    <input type="checkbox" id="aic-filter" onchange="updateFilters()">
+                    <span>Tylko z certyfikatem AIC</span>
+                </label>
+            </div>
+
+            <div style="margin-top: 10px; font-size: 0.8rem; color: #95a5a6; text-align: center;">
+                <span id="count-display">Ładowanie...</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -116,71 +278,141 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([42.35, 14.16], 6); // Zoom out to see Italy
+        // Global variables
+        var map;
+        var markersClusterGroup;
+        var allPlaces = []; // Store the fetched data here
 
-        // Add the OpenStreetMap tiles
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function () {
+            initMap();
+            loadData();
+        });
 
-        // Fetch the data
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                var markers = L.markerClusterGroup();
+        function initMap() {
+            // Initialize the map
+            map = L.map('map').setView([42.5, 12.5], 6); // Centered on Italy
 
-                data.forEach(place => {
-                    if (place.lat && place.lng) {
-                        var popupContent = `
-                            <div class="popup-content">
-                                <h3>${place.name}</h3>
-                                <p><strong>Tipo:</strong> ${place.type}</p>
-                                <p><strong>Indirizzo:</strong> ${place.address}</p>
-                                ${place.aic_certified ? '<span class="aic-badge">AIC Certified</span>' : ''}
-                            </div>
-                        `;
+            // Add the OpenStreetMap tiles
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
 
-                        var markerClass = 'marker-gelateria';
-                        var iconContent = '🍦';
+            // Initialize Cluster Group
+            markersClusterGroup = L.markerClusterGroup({
+                showCoverageOnHover: false,
+                maxClusterRadius: 50
+            });
+            map.addLayer(markersClusterGroup);
+        }
 
-                        if (place.type === 'Gelateria') {
-                            markerClass = 'marker-gelateria';
-                            iconContent = '🍦';
-                        } else if (place.type === 'Ristorante') {
-                            markerClass = 'marker-ristorante';
-                            iconContent = '🍝';
-                        } else if (place.type === 'Pizzeria') {
-                            markerClass = 'marker-pizzeria';
-                            iconContent = '🍕';
-                        } else if (place.type === 'Pasticceria') {
-                            markerClass = 'marker-pasticceria';
-                            iconContent = '🍰';
-                        }
+        function loadData() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    allPlaces = data; // Store data globally
+                    updateFilters(); // Render initial markers
+                })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    document.getElementById('count-display').innerText = "Błąd ładowania danych";
+                });
+        }
 
-                        var icon = L.divIcon({
-                            className: 'custom-marker ' + markerClass,
-                            html: iconContent,
-                            iconSize: [30, 30],
-                            iconAnchor: [15, 15]
-                        });
+        function updateFilters() {
+            if (!allPlaces.length) return;
 
-                        var marker = L.marker([place.lat, place.lng], { icon: icon })
-                            .bindPopup(popupContent);
+            // 1. Get current filter states
+            const selectedTypes = Array.from(document.querySelectorAll('.filter-list input[type="checkbox"]:checked'))
+                .map(cb => cb.value);
 
-                        markers.addLayer(marker);
-                    }
+            const onlyAIC = document.getElementById('aic-filter').checked;
+
+            // 2. Filter data
+            const filteredPlaces = allPlaces.filter(place => {
+                // Check Type
+                if (!selectedTypes.includes(place.type)) return false;
+
+                // Check AIC
+                if (onlyAIC && !place.aic_certified) return false;
+
+                // Must have coordinates
+                if (!place.lat || !place.lng) return false;
+
+                return true;
+            });
+
+            // 3. Update Map
+            renderMarkers(filteredPlaces);
+
+            // 4. Update Count
+            document.getElementById('count-display').innerText = `${filteredPlaces.length} znalezionych lokali`;
+        }
+
+        function renderMarkers(places) {
+            markersClusterGroup.clearLayers(); // Remove existing markers
+
+            const newMarkers = [];
+
+            places.forEach(place => {
+                let placeTypePL = place.type;
+                if (place.type === 'Gelateria') placeTypePL = 'Lodziarnia';
+                else if (place.type === 'Ristorante') placeTypePL = 'Restauracja';
+                else if (place.type === 'Pizzeria') placeTypePL = 'Pizzeria';
+                else if (place.type === 'Pasticceria') placeTypePL = 'Cukiernia';
+
+                var popupContent = `
+                    <div class="popup-content">
+                        <h3>${place.name}</h3>
+                        <p><strong>Rodzaj:</strong> ${placeTypePL}</p>
+                        <p><strong>Adres:</strong> ${place.address}</p>
+                        <p><strong>Region:</strong> ${place.region}</p>
+                        ${place.aic_certified ? '<span class="aic-badge">Certyfikat AIC <i class="fas fa-check-circle"></i></span>' : ''}
+                        <div style="margin-top: 10px;">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}" target="_blank" style="color: #3498db; text-decoration: none;">🚗 Dojazd</a>
+                        </div>
+                    </div>
+                `;
+
+                var markerClass = 'marker-gelateria';
+                var iconContent = '🍦';
+
+                if (place.type === 'Gelateria') {
+                    markerClass = 'marker-gelateria';
+                    iconContent = '🍦';
+                } else if (place.type === 'Ristorante') {
+                    markerClass = 'marker-ristorante';
+                    iconContent = '🍝';
+                } else if (place.type === 'Pizzeria') {
+                    markerClass = 'marker-pizzeria';
+                    iconContent = '🍕';
+                } else if (place.type === 'Pasticceria') {
+                    markerClass = 'marker-pasticceria';
+                    iconContent = '🍰';
+                }
+
+                var icon = L.divIcon({
+                    className: 'custom-marker ' + markerClass,
+                    html: iconContent,
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 15],
+                    popupAnchor: [0, -15]
                 });
 
-                markers.addTo(map);
+                var marker = L.marker([place.lat, place.lng], { icon: icon })
+                    .bindPopup(popupContent);
 
-                // Fit map to markers
-                if (markers.getLayers().length > 0) {
-                    map.fitBounds(markers.getBounds(), { padding: [50, 50] });
-                }
-            })
-            .catch(error => console.error('Error loading data:', error));
+                newMarkers.push(marker);
+            });
+
+            markersClusterGroup.addLayers(newMarkers);
+
+            // Optional: Fit bounds if filters changed drastically, but maybe annoying for user
+            // if (newMarkers.length > 0) {
+            //     map.fitBounds(markersClusterGroup.getBounds(), { padding: [50, 50] });
+            // }
+        }
 
     </script>
 </body>
